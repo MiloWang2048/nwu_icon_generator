@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "slider": "../../common/components/slider/slider"
+  },
+  "disableScroll": true
 }
