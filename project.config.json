@@ -64,5 +64,7 @@
     "miniprogram": {
       "list": []
     }
-  }
+  },
+  "cloudbaseRoot": "cloudbase/",
+  "miniprogramRoot": "miniprogram/"
 }
