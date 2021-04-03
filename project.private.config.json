@@ -1,0 +1,22 @@
+{
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/select-avatar/select-avatar",
+          "pathName": "pages/select-avatar/select-avatar",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

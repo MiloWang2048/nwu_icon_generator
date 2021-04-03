@@ -7,3 +7,11 @@ page {
   background-position-y: 100%;
   background-size: cover;
 }
+
+.next-btn {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 17vh;
+  margin: auto;
+}

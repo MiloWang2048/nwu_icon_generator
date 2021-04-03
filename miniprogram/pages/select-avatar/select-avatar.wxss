@@ -1,0 +1,14 @@
+/* miniprogram/pages/select-avatar/select-avatar.wxss */
+
+.avatar {
+  margin: 10vh auto;
+  display: block;
+  width: 60vw;
+  height: 60vw;
+  border-radius: 30vw;
+}
+
+.btn {
+  color: #ec407a;
+  margin-top: 20rpx;
+}

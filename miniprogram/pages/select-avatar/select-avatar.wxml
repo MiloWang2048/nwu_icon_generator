@@ -1,0 +1,8 @@
+<!--miniprogram/pages/select-avatar/select-avatar.wxml-->
+<image class="avatar" src="{{avatarUrl}}"></image>
+
+<button class="btn" bind:tap="onUseWechatAvatar">使用微信头像</button>
+
+<button class="btn" bind:tap="onChoosePhoto">拍摄/选择图片</button>
+
+<button class="next-btn" type="primary" bind:tap="onNext">下一步</button>
