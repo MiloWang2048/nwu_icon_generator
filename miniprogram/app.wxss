@@ -8,10 +8,16 @@ page {
   background-size: cover;
 }
 
-.next-btn {
+button {
+  color: #ec407a;
+  margin-top: 20rpx;
+}
+
+button[type='primary'] {
   position: fixed;
   left: 0;
   right: 0;
+  background-color: #407aec !important;
   bottom: 17vh;
   margin: auto;
 }

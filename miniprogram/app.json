@@ -1,7 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/select-avatar/select-avatar"
+    "pages/select-avatar/select-avatar",
+    "pages/clip-avatar/clip-avatar",
+    "pages/select-border/select-border"
   ],
   "window": {
     "navigationBarTextStyle": "black",

@@ -29,13 +29,23 @@ Page({
     })
   },
   onChoosePhoto() {
-    console.log("sdasd");
     wx.chooseImage({
       count: 1,
       sizeType: ['original'],
-      success: res => {
+      success: photoRes => {
+        // wx.navigateTo({
+        //   url: '/pages/clip-avatar/clip-avatar',
+        //   events: {
+        //     gotClippedPhoto: res => {
+        //       console.log(res)
+        //     }
+        //   },
+        //   success: res => {
+        //     res.eventChannel.emit('photoPath', photoRes.tempFilePaths[0])
+        //   }
+        // })
         this.setData({
-          avatarUrl: res.tempFilePaths[0]
+          avatarUrl: photoRes.tempFilePaths[0]
         })
       }
     })
@@ -48,6 +58,11 @@ Page({
       })
       return;
     }
-    console.log("next page");
+    wx.navigateTo({
+      url: '/pages/select-border/select-border',
+      success: res => {
+        res.eventChannel.emit('avatarUrl', this.data.avatarUrl)
+      }
+    })
   }
 })

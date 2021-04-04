@@ -7,8 +7,3 @@
   height: 60vw;
   border-radius: 30vw;
 }
-
-.btn {
-  color: #ec407a;
-  margin-top: 20rpx;
-}
