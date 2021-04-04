@@ -9,7 +9,6 @@ page {
 }
 
 button {
-  color: #ec407a;
   margin-top: 20rpx;
 }
 
