@@ -6,12 +6,18 @@ const {
 Page({
   data: {},
   onLoad() {
+    wx.showLoading({
+      title: "生成头像"
+    })
     this.getOpenerEventChannel().on("mixData", mixData => {
       wx.cloud.downloadFile({
         fileID: mixData.border,
         success: res => {
           mixData.border = res.tempFilePath
           this.mix(mixData.avatar, mixData.border)
+        },
+        complete: res => {
+          wx.hideLoading();
         }
       })
     })
@@ -27,7 +33,7 @@ Page({
   },
   onSave() {
     wx.showLoading({
-      title: "生成头像"
+      title: "保存头像"
     })
     wx.createSelectorQuery().select('#canvas').fields({
       node: true
