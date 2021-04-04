@@ -26,6 +26,9 @@ Page({
     })
   },
   onSave() {
+    wx.showLoading({
+      title: "生成头像"
+    })
     wx.createSelectorQuery().select('#canvas').fields({
       node: true
     }).exec(res => {
