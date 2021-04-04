@@ -1,8 +1,6 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/select-avatar/select-avatar",
-    "pages/clip-avatar/clip-avatar",
     "pages/select-border/select-border",
     "pages/generate-avatar/generate-avatar"
   ],
