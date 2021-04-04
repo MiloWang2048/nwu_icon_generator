@@ -8,4 +8,6 @@
 
 <image class="avatar" src="{{avatarUrl}}"></image>
 
+<image class="hint" src="{{hintUrl}}" mode="widthFix"></image>
+
 <button type="primary" bind:tap="onNext">制作头像</button>

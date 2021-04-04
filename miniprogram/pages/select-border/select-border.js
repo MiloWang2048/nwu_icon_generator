@@ -7,7 +7,8 @@ import {
 
 Page({
   data: {
-    avatarUrl: "http://tmp/UltiaO0NI4blc4f4816d49615e0af1badf5be4f69446.jpeg",
+    hintUrl: cloudFileRootPath + "/assets/hint.png",
+    avatarUrl: "",
     borders: [],
     current: 0
   },

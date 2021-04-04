@@ -3,7 +3,7 @@
 .swiper {
   width: 100vw;
   height: calc(100vw - 200rpx);
-  margin: 15vh auto;
+  margin: 15vh auto 0 auto;
 }
 
 .avatar {
@@ -16,6 +16,13 @@
   left: 0;
   right: 0;
   margin: auto;
+}
+
+.hint {
+  display: block;
+  width: 300rpx;
+  margin: 40rpx auto;
+
 }
 
 .border {
