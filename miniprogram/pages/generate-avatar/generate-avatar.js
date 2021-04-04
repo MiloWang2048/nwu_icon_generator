@@ -67,8 +67,6 @@ function drawImage(canvas, imgPath) {
       success: img => {
         const imgObj = canvas.createImage()
         imgObj.src = img.path
-        imgObj.width = img.width
-        imgObj.height = img.height
         imgObj.onload = () => {
           ctx.drawImage(imgObj, 0, 0, img.width, img.height, 0, 0, 1024, 1024)
           resolve()
