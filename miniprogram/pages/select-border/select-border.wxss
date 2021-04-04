@@ -1,0 +1,25 @@
+/* miniprogram/pages/select-border/select-border.wxss */
+
+.swiper {
+  width: 100vw;
+  height: calc(100vw - 200rpx);
+  margin: 15vh auto;
+}
+
+.avatar {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: calc(100vw - 200rpx);
+  height: calc(100vw - 200rpx);
+  top: 15vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.border {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
