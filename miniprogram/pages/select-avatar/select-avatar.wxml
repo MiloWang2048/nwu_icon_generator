@@ -3,6 +3,8 @@
 
 <button class="btn" bind:tap="onUseWechatAvatar">使用微信头像</button>
 
-<button class="btn" bind:tap="onChoosePhoto">拍摄/选择图片</button>
+<button class="btn" bind:tap="onChoosePhoto" data-type="camera">拍摄</button>
+
+<button class="btn" bind:tap="onChoosePhoto" data-type="album">选择图片</button>
 
 <button class="next-btn" type="primary" bind:tap="onNext">下一步</button>

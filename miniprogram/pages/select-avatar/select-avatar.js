@@ -30,22 +30,13 @@ Page({
       }
     })
   },
-  onChoosePhoto() {
+  onChoosePhoto(e) {
     wx.chooseImage({
       count: 1,
+      sourceType: [e.currentTarget.dataset.type],
       sizeType: ['original'],
       success: photoRes => {
-        // wx.navigateTo({
-        //   url: '/pages/clip-avatar/clip-avatar',
-        //   events: {
-        //     gotClippedPhoto: res => {
-        //       console.log(res)
-        //     }
-        //   },
-        //   success: res => {
-        //     res.eventChannel.emit('photoPath', photoRes.tempFilePaths[0])
-        //   }
-        // })
+        
         this.setData({
           avatarUrl: photoRes.tempFilePaths[0]
         })
