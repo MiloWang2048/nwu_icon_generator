@@ -1,10 +1,14 @@
 // common/components/slider/slider.js
+import {
+  cloudFileRootPath
+} from '../../config'
 Component({
   data: {
     x: 0,
     last: 0,
     sliderWidth: 0,
-    sliderBlockWidth: 0
+    sliderBlockWidth: 0,
+    arrowImgUrl: cloudFileRootPath + '/assets/arrow.png'
   },
   lifetimes: {
     attached() {
