@@ -13,12 +13,6 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/select-avatar/select-avatar",
-          "pathName": "pages/select-avatar/select-avatar",
-          "query": "",
-          "scene": null
-        },
-        {
           "name": "pages/select-border/select-border",
           "pathName": "pages/select-border/select-border",
           "query": "",
@@ -27,6 +21,13 @@
         {
           "name": "pages/generate-avatar/generate-avatar",
           "pathName": "pages/generate-avatar/generate-avatar",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/clip-avatar/alip-avatar",
+          "pathName": "pages/clip-avatar/alip-avatar",
+          "query": "",
           "scene": null
         }
       ]

@@ -2,7 +2,8 @@
   "pages": [
     "pages/select-avatar/select-avatar",
     "pages/select-border/select-border",
-    "pages/generate-avatar/generate-avatar"
+    "pages/generate-avatar/generate-avatar",
+    "pages/clip-avatar/clip-avatar"
   ],
   "window": {
     "navigationBarTextStyle": "black",

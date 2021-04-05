@@ -36,9 +36,19 @@ Page({
       sourceType: [e.currentTarget.dataset.type],
       sizeType: ['original'],
       success: photoRes => {
-        
-        this.setData({
-          avatarUrl: photoRes.tempFilePaths[0]
+        wx.navigateTo({
+          url: '/pages/clip-avatar/clip-avatar',
+          events: {
+            clippedPhoto: src => {
+              this.setData({
+                avatarUrl: src
+              })
+            }
+          },
+          success: res => {
+            res.eventChannel.emit("rawPhoto", photoRes.tempFilePaths[0])
+          },
+          fail: console.error
         })
       }
     })
