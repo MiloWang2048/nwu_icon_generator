@@ -16,6 +16,12 @@ Page({
         let url = res.userInfo.avatarUrl;
         if (/\/[0-9]+$/.test(url)) {
           url = url.replace(/\/[0-9]+$/, "/0")
+        } else {
+          wx.showToast({
+            title: "获取高清头像失败",
+            icon: "error"
+          })
+          console.error(res.userInfo.avatarUrl);
         }
         wx.downloadFile({
           url,
