@@ -13,8 +13,12 @@ Page({
     wx.getUserProfile({
       desc: "使用微信头像",
       success: res => {
+        let url = res.userInfo.avatarUrl;
+        if (/\/[0-9]+$/.test(url)) {
+          url = url.replace(/\/[0-9]+$/, "/0")
+        }
         wx.downloadFile({
-          url: res.userInfo.avatarUrl,
+          url,
           success: res => {
             this.setData({
               avatarUrl: res.tempFilePath
