@@ -1,7 +1,7 @@
 <!--miniprogram/pages/select-border/select-border.wxml-->
 <swiper class="swiper" indicator-dots indicator-active-color="#ec407a" circular previous-margin="100rpx"
   next-margin="100rpx" bind:change="onChange">
-  <swiper-item class="item" wx:for="{{borders}}" wx:key="item">
+  <swiper-item class="{{current===index?'shine':'fade'}}" wx:for="{{borders}}" wx:key="item">
     <image class="border" src="{{item}}"></image>
   </swiper-item>
 </swiper>
