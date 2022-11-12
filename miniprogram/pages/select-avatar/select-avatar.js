@@ -2,69 +2,21 @@
 import {
   cloudFileRootPath
 } from '../../common/config'
+
+const defaultAvatarUrl = cloudFileRootPath + "/assets/account.png";
+
 Page({
   data: {
-    avatarUrl: cloudFileRootPath + "/assets/account.png"
+    avatarUrl: defaultAvatarUrl
   },
-  onUseWechatAvatar() {
-    wx.showLoading({
-      title: '获取头像',
-    })
-    wx.getUserProfile({
-      desc: "使用微信头像",
-      success: res => {
-        let url = res.userInfo.avatarUrl;
-        if (/\/[0-9]+$/.test(url)) {
-          url = url.replace(/\/[0-9]+$/, "/0")
-        } else {
-          wx.showToast({
-            title: "获取高清头像失败",
-            icon: "error"
-          })
-          console.error(res.userInfo.avatarUrl);
-        }
-        wx.downloadFile({
-          url,
-          success: res => {
-            this.setData({
-              avatarUrl: res.tempFilePath
-            })
-          },
-          complete() {
-            wx.hideLoading()
-          }
-        })
-      },
-      fail() {
-        wx.hideLoading()
-      }
-    })
-  },
-  onChoosePhoto(e) {
-    wx.chooseImage({
-      count: 1,
-      sourceType: [e.currentTarget.dataset.type],
-      sizeType: ['original'],
-      success: photoRes => {
-        wx.navigateTo({
-          url: '/pages/clip-avatar/clip-avatar',
-          events: {
-            clippedPhoto: src => {
-              this.setData({
-                avatarUrl: src
-              })
-            }
-          },
-          success: res => {
-            res.eventChannel.emit("rawPhoto", photoRes.tempFilePaths[0])
-          },
-          fail: console.error
-        })
-      }
+  onChooseAvatar(e) {
+    console.log(e)
+    this.setData({
+      avatarUrl: e.detail.avatarUrl,
     })
   },
   onNext() {
-    if (/^cloud.+/.test(this.data.avatarUrl)) {
+    if (this.data.avatarUrl === defaultAvatarUrl) {
       wx.showToast({
         title: '请选择头像',
         icon: 'error'

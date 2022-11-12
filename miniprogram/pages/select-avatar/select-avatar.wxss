@@ -7,3 +7,12 @@
   height: 60vw;
   border-radius: 30vw;
 }
+
+.hint {
+  font-size: small;
+  margin: 20px 30px;
+  text-align: center;
+  padding: 4px;
+  border-radius: 8px;
+  backdrop-filter: blur(16px);
+}
