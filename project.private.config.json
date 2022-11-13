@@ -18,9 +18,10 @@
           "scene": null
         },
         {
-          "name": "pages/clip-avatar/alip-avatar",
-          "pathName": "pages/clip-avatar/alip-avatar",
+          "name": "pages/clip-avatar/clip-avatar",
+          "pathName": "pages/clip-avatar/clip-avatar",
           "query": "",
+          "launchMode": "default",
           "scene": null
         }
       ]
