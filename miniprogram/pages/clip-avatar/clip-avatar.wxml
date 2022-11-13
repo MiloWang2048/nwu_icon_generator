@@ -1,4 +1,0 @@
-<!--miniprogram/pages/clip-avatar/alip-avatar.wxml-->
-<image-cropper id="image-cropper" limit_move disable_rotate imgSrc="{{src}}" disable_ratio></image-cropper>
-
-<button type="primary" class="submit" bind:tap="onSubmit">完成剪裁</button>

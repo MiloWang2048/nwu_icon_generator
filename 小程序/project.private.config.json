@@ -1,0 +1,33 @@
+{
+  "setting": {
+    "compileHotReLoad": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/select-border/select-border",
+          "pathName": "pages/select-border/select-border",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/generate-avatar/generate-avatar",
+          "pathName": "pages/generate-avatar/generate-avatar",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/clip-avatar/clip-avatar",
+          "pathName": "pages/clip-avatar/clip-avatar",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+  "libVersion": "2.22.1"
+}

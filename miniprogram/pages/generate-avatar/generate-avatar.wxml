@@ -1,5 +1,0 @@
-<!--miniprogram/pages/generate-avatar/generate-avatar.wxml-->
-
-<canvas id="canvas" type="2d"></canvas>
-
-<button type="primary" bind:tap="onSave">保存到手机</button>

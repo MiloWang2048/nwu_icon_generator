@@ -1,5 +1,0 @@
-/* miniprogram/pages/clip-avatar/alip-avatar.wxss */
-
-.submit{
-  z-index: 2;
-}

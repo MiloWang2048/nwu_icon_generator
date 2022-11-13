@@ -1,6 +1,0 @@
-<!--common/components/slider/slider.wxml-->
-<movable-area class="slider">
-  <movable-view class="slider-block" x="{{x}}" direction="horizontal" bind:touchend="onTouchEnd" bind:change="onChange" damping="30">
-    <image class="slider-img" src="{{arrowImgUrl}}"></image>
-  </movable-view>
-</movable-area>

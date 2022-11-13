@@ -1,9 +1,0 @@
-/* miniprogram/pages/generate-avatar/generate-avatar.wxss */
-
-#canvas {
-  width: 60vw;
-  height: 60vw;
-  margin: 15vh auto;
-}
-
-
