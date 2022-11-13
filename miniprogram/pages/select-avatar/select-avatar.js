@@ -10,9 +10,19 @@ Page({
     avatarUrl: defaultAvatarUrl
   },
   onChooseAvatar(e) {
-    console.log(e)
-    this.setData({
-      avatarUrl: e.detail.avatarUrl,
+    wx.navigateTo({
+      url: '/pages/clip-avatar/clip-avatar',
+      events: {
+        clippedPhoto: src => {
+          this.setData({
+            avatarUrl: src
+          })
+        }
+      },
+      success: res => {
+        res.eventChannel.emit("rawPhoto", e.detail.avatarUrl)
+      },
+      fail: console.error
     })
   },
   onNext() {
